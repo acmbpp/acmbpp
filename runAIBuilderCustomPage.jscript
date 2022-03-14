@@ -1,0 +1,30 @@
+function openCustomPane(str) {
+
+    // Inline Page
+    var pageInput = {
+        pageType: "custom",
+        name: "cr8f6_ejecutarmodeloai_6f2cb",
+        entityName: "cr8f6_factura",
+        recordId: str,
+    };
+    var navigationOptions = {
+        target: 2,
+        position: 2,
+        width: {
+            value: 500,
+            unit: "px"
+        },
+        title: "Ejecutar Modelo AI"
+    };
+    Xrm.Navigation.navigateTo(pageInput, navigationOptions)
+        .then(
+            function() {
+                // Called when page opens
+            }
+        ).catch(
+            function(error) {
+                // Handle error
+            }
+        );
+
+}
