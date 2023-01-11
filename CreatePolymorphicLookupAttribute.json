@@ -1,0 +1,62 @@
+{
+  "OneToManyRelationships": [
+    {
+      "SchemaName": "bpp_employeeresource_poly_bpp_audiodevice",
+      "ReferencedEntity": "bpp_audiodevice",
+      "ReferencingEntity": "bpp_employeeresource"
+    },
+    {
+      "SchemaName": "bpp_employeeresource_poly_bpp_keyboard",
+      "ReferencedEntity": "bpp_keyboard",
+      "ReferencingEntity": "bpp_employeeresource"
+    },
+    {
+      "SchemaName": "bpp_employeeresource_poly_bpp_laptop",
+      "ReferencedEntity": "bpp_laptop",
+      "ReferencingEntity": "bpp_employeeresource"
+    },
+    {
+      "SchemaName": "bpp_employeeresource_poly_bpp_monitor",
+      "ReferencedEntity": "bpp_monitor",
+      "ReferencingEntity": "bpp_employeeresource"
+    }
+  ],
+  "Lookup": {
+    "AttributeType": "Lookup",
+    "AttributeTypeName": {
+      "Value": "LookupType"
+    },
+    "Description": {
+      "@odata.type": "Microsoft.Dynamics.CRM.Label",
+      "LocalizedLabels": [
+        {
+          "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+          "Label": "Resource Polymorphic Lookup Attribute",
+          "LanguageCode": 1033
+        }
+      ],
+      "UserLocalizedLabel": {
+        "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+        "Label": "Resource Polymorphic Lookup Attribute",
+        "LanguageCode": 1033
+      }
+    },
+    "DisplayName": {
+      "@odata.type": "Microsoft.Dynamics.CRM.Label",
+      "LocalizedLabels": [
+        {
+          "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+          "Label": "Resource",
+          "LanguageCode": 1033
+        }
+      ],
+      "UserLocalizedLabel": {
+        "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+        "Label": "Resource",
+        "LanguageCode": 1033
+      }
+    },
+    "SchemaName": "bpp_Resource",
+    "@odata.type": "Microsoft.Dynamics.CRM.ComplexLookupAttributeMetadata"
+  }
+}
